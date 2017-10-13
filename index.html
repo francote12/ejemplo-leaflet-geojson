@@ -78,7 +78,15 @@
 	      
 	onEachFeature: onEachFeature
       }).addTo(map);	    
-	    
+     
+      L.geoJson(rios200, {
+        style: function (feature) {
+	  return {
+            fillColor: '#0066ff', 
+            color: '#0066ff', 
+          };
+        }
+      }).addTo(map);	    
 	    
     </script>
   </body>
